@@ -2,33 +2,19 @@ package ArrayEX;
 
 public class Ex3 {
 	public static void main(String[] args) {
-		int[] arr = new int[5];
 		
-		for(int i =0;i<arr.length;i++){
-			arr[i] = i + 1;
-			
-			System.out.println("[º¯°æÀü]");
-			System.out.println("arr.length:"+arr.length);
-			for( i =0;i<arr.length;i++){
-				System.out.println("arr["+1+"]:"+arr[i]);
-				
-			int [] tmp =  new int[arr.length*2];
-			
-			for(i =0; i<arr.length;i++){
-				tmp[i] = arr[i];
-				
-				arr = tep;
-				
-				System.out.println("[º¯°æÈÄ]");
-				System.out.println("arr.length:"+arr.length);
-			}
-			
-		
-				
-			}
-				
-			}
-		
-		}
 	
+	int sum = 0;
+	float average = 0f;
+	
+	int [] score = {100,88,100,100,90};
+	
+	for(int i =0; i<score.length;i++) {
+		sum+= score[i];
+	}
+	average = sum / (float)score.length;
+	
+	System.out.println("ÃÑÁ¡ :"+sum);
+	System.out.println("Æò±Õ :"+average);
+}
 }
